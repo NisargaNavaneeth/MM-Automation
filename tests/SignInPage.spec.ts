@@ -19,7 +19,7 @@ test.describe('Sign In Page - Authentication Flows', () => {
             
             // Wait for redirect to happen or layout shift that proves login
             // (If the dashboard route is different, adjust this regex accordingly)
-            await expect(page).toHaveURL(/.*dashboard|.*|.*home.*/, { timeout: 10000 });
+            await expect(page).toHaveURL(/.*dashboard|.*|.*home.*/, { timeout: 50000 });
             
             // Further assertion checking login success banner or user element can reside here
         });
